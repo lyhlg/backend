@@ -1,0 +1,15 @@
+node_modules
+dist/
+yarn.*
+package-lock.json
+yarn-error.log
+**/.DS_Store
+.vscode/
+yarn.lock
+stats.json
+firebase.*
+.firebaserc
+firebase/
+.aws_credential.sh
+Dockerfile
+.gitlab-ci.yml
