@@ -13,3 +13,4 @@ firebase/
 .aws_credential.sh
 Dockerfile
 .gitlab-ci.yml
+build/
