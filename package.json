@@ -6,6 +6,7 @@
   "author": "lyhlg0201@gmail.com",
   "license": "MIT",
   "scripts": {
+    "lint-check": "./node_modules/.bin/eslint --ignore-path .eslintignore 'src/**'",
     "tsc:watch": "tsc &",
     "start": "yarn tsc:watch && nodemon --watch dist/ dist/index.js"
   },
@@ -26,7 +27,9 @@
     "eslint": "^6.6.0",
     "eslint-config-import": "^0.13.0",
     "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-import-order": "^2.1.4",
     "eslint-plugin-prettier": "^3.1.1",
+    "husky": "^3.0.9",
     "nodemon": "^1.19.4",
     "prettier": "^1.18.2"
   }
