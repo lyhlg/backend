@@ -7,6 +7,7 @@ module.exports = {
   ],
   plugins: ['@typescript-eslint', 'prettier', 'import-order'],
   env: {
+    node: true,
     browser: true,
     jasmine: true,
     jest: true,

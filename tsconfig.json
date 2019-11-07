@@ -13,7 +13,7 @@
     "locale": "ko",
     "outDir": "./dist" /* Redirect output structure to the directory. */,
     "moduleResolution": "node",
-    "baseUrl": ".",
+    "baseUrl": "./src",
     // "declaration": true,
     // "declarationDir": "src/@types",
     "paths": {

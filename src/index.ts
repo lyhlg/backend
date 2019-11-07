@@ -1,9 +1,17 @@
+import 'dotenv/config';
 import Koa from 'koa';
 import Router from 'koa-router';
 import api from './api';
+import db from './db';
+import bodyParser from 'koa-bodyparser';
 
 const app = new Koa();
 const router = new Router();
+const port = process.env.PORT || '3001';
+
+db();
+
+app.use(bodyParser());
 
 app.use(async (ctx, next) => {
   await next();
@@ -22,6 +30,4 @@ router.use('/api', api.routes());
 
 app.use(router.routes()).use(router.allowedMethods());
 
-app.listen(4000, () => {
-  console.log('Server is listening to port 4000');
-});
+app.listen(port, () => console.log(`Server is listening to port ${port}`));
